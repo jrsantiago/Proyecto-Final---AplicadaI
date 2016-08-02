@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F3BC17E2-2CDE-4536-A432-B9559A4F41BA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VentanaGz</RootNamespace>
+    <AssemblyName>VentanaGz</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes.Designer.cs">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\Consulta Ventana.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\Consulta Ventana.Designer.cs">
+      <DependentUpon>Consulta Ventana.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\ConsultaCiente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\ConsultaCiente.Designer.cs">
+      <DependentUpon>ConsultaCiente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\ConsultaMateriales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\ConsultaMateriales.Designer.cs">
+      <DependentUpon>ConsultaMateriales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\ConsultaScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\ConsultaScreen.Designer.cs">
+      <DependentUpon>ConsultaScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\ConsultaUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\ConsultaUsuario.Designer.cs">
+      <DependentUpon>ConsultaUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DbGzDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DbGzDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio.Designer.cs">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loging.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loging.Designer.cs">
+      <DependentUpon>Loging.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Material.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Material.Designer.cs">
+      <DependentUpon>Material.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuGz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuGz.Designer.cs">
+      <DependentUpon>MenuGz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Consultas\ReporteScreen .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\ReporteScreen .Designer.cs">
+      <DependentUpon>ReporteScreen .cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteVentana.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteVentana.Designer.cs">
+      <DependentUpon>ReporteVentana.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screen.Designer.cs">
+      <DependentUpon>Screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScreenUserControl.Designer.cs">
+      <DependentUpon>ScreenUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsuarioVentana.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsuarioVentana.Designer.cs">
+      <DependentUpon>UsuarioVentana.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventana.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventana.Designer.cs">
+      <DependentUpon>Ventana.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Clientes.resx">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\Consulta Ventana.resx">
+      <DependentUpon>Consulta Ventana.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\ConsultaCiente.resx">
+      <DependentUpon>ConsultaCiente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\ConsultaMateriales.resx">
+      <DependentUpon>ConsultaMateriales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\ConsultaScreen.resx">
+      <DependentUpon>ConsultaScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\ConsultaUsuario.resx">
+      <DependentUpon>ConsultaUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loging.resx">
+      <DependentUpon>Loging.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Material.resx">
+      <DependentUpon>Material.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuGz.resx">
+      <DependentUpon>MenuGz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Consultas\ReporteScreen .resx">
+      <DependentUpon>ReporteScreen .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ListarScreen.rdlc" />
+    <EmbeddedResource Include="Reportes\ListarVentana.rdlc" />
+    <EmbeddedResource Include="ReporteVentana.resx">
+      <DependentUpon>ReporteVentana.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screen.resx">
+      <DependentUpon>Screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScreenUserControl.resx">
+      <DependentUpon>ScreenUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsuarioVentana.resx">
+      <DependentUpon>UsuarioVentana.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventana.resx">
+      <DependentUpon>Ventana.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DbGzDataSet.xsc">
+      <DependentUpon>DbGzDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DbGzDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DbGzDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DbGzDataSet.xss">
+      <DependentUpon>DbGzDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder-Add-icon.png" />
+    <None Include="Resources\Arrow-Left-icon.png" />
+    <None Include="Resources\13376212992023757304fondo1.png" />
+    <None Include="Resources\degradado-fondo.jpg" />
+    <None Include="Resources\lounge-pz-k33za000-kb-lounge-blanco-25x70-1-hd-b-b.jpg" />
+    <None Include="Resources\Search-2-icon %281%29.png" />
+    <None Include="Resources\Text-Edit-icon.png" />
+    <None Include="Resources\Misc-Delete-Database-icon.png" />
+    <None Include="Resources\Misc-New-Database-icon.png" />
+    <None Include="Resources\newUsuario.jpg" />
+    <None Include="Resources\Blue-Widescreen-Background-1920x1200.jpg" />
+    <None Include="Resources\13376212992023757304fondo.png" />
+    <None Include="Resources\go-back-icon.png" />
+    <None Include="Resources\images %282%29.jpg" />
+    <None Include="Resources\2016-06-22 19.32.04.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{ea8a399f-1c72-4599-beac-956e9893da78}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DALL\DALL.csproj">
+      <Project>{e8ea5274-e847-48f5-9cd3-b23e63e57cfa}</Project>
+      <Name>DALL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidad\Entidad.csproj">
+      <Project>{522dca57-3137-4b27-8941-0ac88c7ce5a1}</Project>
+      <Name>Entidad</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="dbVentana\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SEO-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo-para-fotos-hd-2721.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search-2-icon %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\237271-Keyboard_enter-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arrow-Back-icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

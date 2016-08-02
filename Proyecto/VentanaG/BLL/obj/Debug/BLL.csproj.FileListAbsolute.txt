@@ -1,0 +1,14 @@
+C:\Users\juniorsantiago\Desktop\Proyecto\VentanaG\BLL\bin\Debug\BLL.dll.config
+C:\Users\juniorsantiago\Desktop\Proyecto\VentanaG\BLL\bin\Debug\BLL.dll
+C:\Users\juniorsantiago\Desktop\Proyecto\VentanaG\BLL\bin\Debug\BLL.pdb
+C:\Users\juniorsantiago\Desktop\Proyecto\VentanaG\BLL\bin\Debug\DALL.dll
+C:\Users\juniorsantiago\Desktop\Proyecto\VentanaG\BLL\bin\Debug\Entidad.dll
+C:\Users\juniorsantiago\Desktop\Proyecto\VentanaG\BLL\bin\Debug\EntityFramework.dll
+C:\Users\juniorsantiago\Desktop\Proyecto\VentanaG\BLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\juniorsantiago\Desktop\Proyecto\VentanaG\BLL\bin\Debug\DALL.pdb
+C:\Users\juniorsantiago\Desktop\Proyecto\VentanaG\BLL\bin\Debug\Entidad.pdb
+C:\Users\juniorsantiago\Desktop\Proyecto\VentanaG\BLL\bin\Debug\EntityFramework.xml
+C:\Users\juniorsantiago\Desktop\Proyecto\VentanaG\BLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\juniorsantiago\Desktop\Proyecto\VentanaG\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\juniorsantiago\Desktop\Proyecto\VentanaG\BLL\obj\Debug\BLL.dll
+C:\Users\juniorsantiago\Desktop\Proyecto\VentanaG\BLL\obj\Debug\BLL.pdb

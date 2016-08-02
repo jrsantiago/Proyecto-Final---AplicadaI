@@ -1,0 +1,10 @@
+C:\Users\juniorsantiago\Desktop\Proyecto\VentanaG\Entidad\bin\Debug\Entidad.dll.config
+C:\Users\juniorsantiago\Desktop\Proyecto\VentanaG\Entidad\bin\Debug\Entidad.dll
+C:\Users\juniorsantiago\Desktop\Proyecto\VentanaG\Entidad\bin\Debug\Entidad.pdb
+C:\Users\juniorsantiago\Desktop\Proyecto\VentanaG\Entidad\bin\Debug\EntityFramework.dll
+C:\Users\juniorsantiago\Desktop\Proyecto\VentanaG\Entidad\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\juniorsantiago\Desktop\Proyecto\VentanaG\Entidad\bin\Debug\EntityFramework.xml
+C:\Users\juniorsantiago\Desktop\Proyecto\VentanaG\Entidad\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\juniorsantiago\Desktop\Proyecto\VentanaG\Entidad\obj\Debug\Entidad.csprojResolveAssemblyReference.cache
+C:\Users\juniorsantiago\Desktop\Proyecto\VentanaG\Entidad\obj\Debug\Entidad.dll
+C:\Users\juniorsantiago\Desktop\Proyecto\VentanaG\Entidad\obj\Debug\Entidad.pdb
