@@ -126,6 +126,12 @@
     <Compile Include="Loging.Designer.cs">
       <DependentUpon>Loging.cs</DependentUpon>
     </Compile>
+    <Compile Include="MasterDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterDetails.Designer.cs">
+      <DependentUpon>MasterDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="Material.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -199,6 +205,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Loging.resx">
       <DependentUpon>Loging.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterDetails.resx">
+      <DependentUpon>MasterDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Material.resx">
       <DependentUpon>Material.cs</DependentUpon>

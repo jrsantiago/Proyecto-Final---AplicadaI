@@ -12,6 +12,7 @@ namespace Entidad
         public Screens()
         {
             this.FabricarScreen = new HashSet<FabricarScreen>();
+            this.Proyecto = new HashSet<Proyecto>();
         }
         [Key]
         public int idScreen { get; set; }
@@ -19,12 +20,13 @@ namespace Entidad
         public Nullable<double> ancho { get; set; }
         public Nullable<double> altura { get; set; }
         public Nullable<double> Precio { get; set; }
-     //   public Nullable<double> Total { get; set; }
+     // public Nullable<double> Total { get; set; }
         public Nullable<System.DateTime> fecha { get; set; }
 
         public virtual Cliente Cliente { get; set; }
 
         public virtual ICollection<FabricarScreen> FabricarScreen { get; set; }
-    
-   }
+        public virtual ICollection<Proyecto> Proyecto { get; set; }
+
+    }
 }

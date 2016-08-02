@@ -54,6 +54,7 @@
     <Compile Include="FabricarVentanaAluminio.cs" />
     <Compile Include="Materiales.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proyecto.cs" />
     <Compile Include="Screens.cs" />
     <Compile Include="Usuario.cs" />
     <Compile Include="ventanaAluminio.cs" />

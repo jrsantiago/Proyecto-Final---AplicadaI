@@ -53,6 +53,7 @@
     <Compile Include="ClienteBll.cs" />
     <Compile Include="MaterialesBll.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProyectoBll.cs" />
     <Compile Include="ScreenBll.cs" />
     <Compile Include="UsuarioBLL.cs" />
     <Compile Include="VentanaAlumiBll.cs" />

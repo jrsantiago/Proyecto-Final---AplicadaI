@@ -8,3 +8,13 @@ C:\Users\juniorsantiago\Desktop\Proyecto\VentanaG\Entidad\bin\Debug\EntityFramew
 C:\Users\juniorsantiago\Desktop\Proyecto\VentanaG\Entidad\obj\Debug\Entidad.csprojResolveAssemblyReference.cache
 C:\Users\juniorsantiago\Desktop\Proyecto\VentanaG\Entidad\obj\Debug\Entidad.dll
 C:\Users\juniorsantiago\Desktop\Proyecto\VentanaG\Entidad\obj\Debug\Entidad.pdb
+C:\GitHub\Proyecto-Final---AplicadaI\Proyecto\VentanaG\Entidad\bin\Debug\Entidad.dll.config
+C:\GitHub\Proyecto-Final---AplicadaI\Proyecto\VentanaG\Entidad\bin\Debug\Entidad.dll
+C:\GitHub\Proyecto-Final---AplicadaI\Proyecto\VentanaG\Entidad\bin\Debug\Entidad.pdb
+C:\GitHub\Proyecto-Final---AplicadaI\Proyecto\VentanaG\Entidad\bin\Debug\EntityFramework.dll
+C:\GitHub\Proyecto-Final---AplicadaI\Proyecto\VentanaG\Entidad\bin\Debug\EntityFramework.SqlServer.dll
+C:\GitHub\Proyecto-Final---AplicadaI\Proyecto\VentanaG\Entidad\bin\Debug\EntityFramework.xml
+C:\GitHub\Proyecto-Final---AplicadaI\Proyecto\VentanaG\Entidad\bin\Debug\EntityFramework.SqlServer.xml
+C:\GitHub\Proyecto-Final---AplicadaI\Proyecto\VentanaG\Entidad\obj\Debug\Entidad.csprojResolveAssemblyReference.cache
+C:\GitHub\Proyecto-Final---AplicadaI\Proyecto\VentanaG\Entidad\obj\Debug\Entidad.dll
+C:\GitHub\Proyecto-Final---AplicadaI\Proyecto\VentanaG\Entidad\obj\Debug\Entidad.pdb

@@ -134,5 +134,11 @@ namespace VentanaGz
         {
             v.Close();
         }
+
+        private void masterDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MasterDetails m = new MasterDetails();
+            m.Show();
+        }
     }
 }

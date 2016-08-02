@@ -69,10 +69,10 @@ namespace BLL
 
         }
      
-        public void Actualizar(int id,string nom, string telef, string cedula, string direcci, string email)
+        public void Actualizar(int ids,string nom, string telef, string cedula, string direcci, string email)
         {
             Cliente cliente = (from a in db.Cliente
-                               where a.idCliente == id
+                               where a.idCliente == ids
                                select a).FirstOrDefault();
 
             cliente.nombre = nom;
@@ -138,6 +138,17 @@ namespace BLL
             catch (Exception) { }
 
             return valida;
+        }
+        public static List<Cliente> GetListaCliente(int id)
+        {
+            List<Cliente> lista = new List<Cliente>();
+
+            var db = new VentanaGzDb();
+
+            lista = db.Cliente.Where(p => p.idCliente == id && p.VentanaAluminio.Count > 0).ToList();
+
+            return lista;
+
         }
     }
 }

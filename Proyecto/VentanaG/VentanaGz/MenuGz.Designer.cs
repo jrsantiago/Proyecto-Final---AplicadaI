@@ -31,16 +31,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuGz));
             this.PrincipalmenuStrip = new System.Windows.Forms.MenuStrip();
             this.usuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nuevoUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.actualizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.screenToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.nuevoUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.materialesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clienteToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.ventanaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.screenToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.materialesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.PrincipalmenuStrip.SuspendLayout();
@@ -67,20 +65,12 @@
             this.usuarioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.eliminarToolStripMenuItem,
             this.actualizarToolStripMenuItem,
-            this.screenToolStripMenuItem1,
             this.nuevoUsuarioToolStripMenuItem,
             this.materialesToolStripMenuItem});
             this.usuarioToolStripMenuItem.Name = "usuarioToolStripMenuItem";
             this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(87, 24);
             this.usuarioToolStripMenuItem.Text = "Registros";
             this.usuarioToolStripMenuItem.Click += new System.EventHandler(this.usuarioToolStripMenuItem_Click);
-            // 
-            // nuevoUsuarioToolStripMenuItem
-            // 
-            this.nuevoUsuarioToolStripMenuItem.Name = "nuevoUsuarioToolStripMenuItem";
-            this.nuevoUsuarioToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
-            this.nuevoUsuarioToolStripMenuItem.Text = "Usuario";
-            this.nuevoUsuarioToolStripMenuItem.Click += new System.EventHandler(this.nuevoUsuarioToolStripMenuItem_Click);
             // 
             // eliminarToolStripMenuItem
             // 
@@ -93,15 +83,15 @@
             // 
             this.actualizarToolStripMenuItem.Name = "actualizarToolStripMenuItem";
             this.actualizarToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
-            this.actualizarToolStripMenuItem.Text = "Ventana";
+            this.actualizarToolStripMenuItem.Text = "Pedido";
             this.actualizarToolStripMenuItem.Click += new System.EventHandler(this.actualizarToolStripMenuItem_Click);
             // 
-            // screenToolStripMenuItem1
+            // nuevoUsuarioToolStripMenuItem
             // 
-            this.screenToolStripMenuItem1.Name = "screenToolStripMenuItem1";
-            this.screenToolStripMenuItem1.Size = new System.Drawing.Size(152, 24);
-            this.screenToolStripMenuItem1.Text = "Screen";
-            this.screenToolStripMenuItem1.Click += new System.EventHandler(this.screenToolStripMenuItem1_Click);
+            this.nuevoUsuarioToolStripMenuItem.Name = "nuevoUsuarioToolStripMenuItem";
+            this.nuevoUsuarioToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.nuevoUsuarioToolStripMenuItem.Text = "Usuario";
+            this.nuevoUsuarioToolStripMenuItem.Click += new System.EventHandler(this.nuevoUsuarioToolStripMenuItem_Click);
             // 
             // materialesToolStripMenuItem
             // 
@@ -115,45 +105,37 @@
             this.consultasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.clienteToolStripMenuItem1,
             this.ventanaToolStripMenuItem,
-            this.screenToolStripMenuItem2,
             this.usuariosToolStripMenuItem,
             this.materialesToolStripMenuItem1});
             this.consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
             this.consultasToolStripMenuItem.Size = new System.Drawing.Size(89, 24);
             this.consultasToolStripMenuItem.Text = "Consultas";
             // 
-            // usuariosToolStripMenuItem
-            // 
-            this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
-            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
-            this.usuariosToolStripMenuItem.Text = "Usuarios";
-            this.usuariosToolStripMenuItem.Click += new System.EventHandler(this.usuariosToolStripMenuItem_Click);
-            // 
             // clienteToolStripMenuItem1
             // 
             this.clienteToolStripMenuItem1.Name = "clienteToolStripMenuItem1";
-            this.clienteToolStripMenuItem1.Size = new System.Drawing.Size(152, 24);
-            this.clienteToolStripMenuItem1.Text = "Cliente";
+            this.clienteToolStripMenuItem1.Size = new System.Drawing.Size(189, 24);
+            this.clienteToolStripMenuItem1.Text = "Cliente / Pedido";
             this.clienteToolStripMenuItem1.Click += new System.EventHandler(this.clienteToolStripMenuItem1_Click);
             // 
             // ventanaToolStripMenuItem
             // 
             this.ventanaToolStripMenuItem.Name = "ventanaToolStripMenuItem";
-            this.ventanaToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.ventanaToolStripMenuItem.Size = new System.Drawing.Size(189, 24);
             this.ventanaToolStripMenuItem.Text = "Ventana";
             this.ventanaToolStripMenuItem.Click += new System.EventHandler(this.ventanaToolStripMenuItem_Click);
             // 
-            // screenToolStripMenuItem2
+            // usuariosToolStripMenuItem
             // 
-            this.screenToolStripMenuItem2.Name = "screenToolStripMenuItem2";
-            this.screenToolStripMenuItem2.Size = new System.Drawing.Size(152, 24);
-            this.screenToolStripMenuItem2.Text = "Screen";
-            this.screenToolStripMenuItem2.Click += new System.EventHandler(this.screenToolStripMenuItem2_Click);
+            this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(189, 24);
+            this.usuariosToolStripMenuItem.Text = "Usuarios";
+            this.usuariosToolStripMenuItem.Click += new System.EventHandler(this.usuariosToolStripMenuItem_Click);
             // 
             // materialesToolStripMenuItem1
             // 
             this.materialesToolStripMenuItem1.Name = "materialesToolStripMenuItem1";
-            this.materialesToolStripMenuItem1.Size = new System.Drawing.Size(152, 24);
+            this.materialesToolStripMenuItem1.Size = new System.Drawing.Size(189, 24);
             this.materialesToolStripMenuItem1.Text = "Materiales";
             this.materialesToolStripMenuItem1.Click += new System.EventHandler(this.materialesToolStripMenuItem1_Click);
             // 
@@ -196,9 +178,7 @@
         private System.Windows.Forms.ToolStripMenuItem consultasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem usuariosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clienteToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem screenToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem ventanaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem screenToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem materialesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem materialesToolStripMenuItem1;
         //   private VentanaGz.ScreenUserControl screenUserControl1;

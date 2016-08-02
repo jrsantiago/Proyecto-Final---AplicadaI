@@ -17,6 +17,7 @@ namespace VentanaGz
     public partial class Ventana : Form
     {
         int id;
+        string Detail; 
         float ancho;
         float altura;
         string color;
@@ -29,11 +30,12 @@ namespace VentanaGz
         {
            
             id = 0;
-            ancho = 0; ;
-            altura = 0; ;
-            color = "";
-            tipoMaterial = "";
-            selecioDatagrind = "";
+            ancho = 0;
+            altura = 0;
+            color = string.Empty;
+            tipoMaterial = string.Empty;
+            selecioDatagrind = string.Empty;
+            Detail = string.Empty;
             InitializeComponent();
         }
         VentanaAlumiBll ventana = new VentanaAlumiBll();
@@ -42,7 +44,7 @@ namespace VentanaGz
         public void grid()
         {
             var data = from a in db.ventanaAluminio
-                       where a.idCliente == this.id
+                    //   where a.idCliente == this.id
                        select a;
 
             dataGridVentana.DataSource = data.ToList();
@@ -68,16 +70,17 @@ namespace VentanaGz
                 {
                     MessageBox.Show("Seleccione el Id del registro a actualizar");
                 }
-
-                color = ((string)comboBcolor.SelectedItem).ToString();
-                tipoMaterial = ((string)comboBTipoMaterial.SelectedItem).ToString();
+                Detail = (string)cboDetail.SelectedItem;
+                id = int.Parse(textBbuscar.Text);
+                color = (string)comboBcolor.SelectedItem;
+                tipoMaterial = (string)comboBTipoMaterial.SelectedItem;
                 ancho = float.Parse(textBancho.Text);
                 altura = float.Parse(textBoxAltura.Text);
        
               DateTime tiempo;
                tiempo = dateTimeVentana.Value;
       
-                VentanaAlumiBll ven = new VentanaAlumiBll(ancho, altura, color, tipoMaterial, this.id,tiempo);
+                VentanaAlumiBll ven = new VentanaAlumiBll(ancho, altura, color, tipoMaterial, this.id,tiempo, Detail);
                 ven.fabriVentanaAluninio();
                 MessageBox.Show("Ventana se ha agregado");
 
@@ -161,7 +164,7 @@ namespace VentanaGz
         private void Mostrar_Click(object sender, EventArgs e)
         {
             var data = from a in db.ventanaAluminio
-                       where a.idCliente == this.id
+                      // where a.idCliente == this.id
                        select a;
             dataGridVentana.ScrollBars = ScrollBars.None;
             dataGridVentana.DataSource = data.ToList();

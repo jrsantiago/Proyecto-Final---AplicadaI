@@ -12,11 +12,11 @@ namespace Entidad
         // [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Cliente()
         {
+           //  this.Screen = new HashSet<Screens>();
+          //  this.ventanaAluminio = new HashSet<ventanaAluminio>();
 
-            this.Screen = new HashSet<Screens>();
-
-            this.ventanaAluminio = new HashSet<ventanaAluminio>();
-        }
+            this.VentanaAluminio = new List<Entidad.ventanaAluminio>();
+        }         
            
          [Key]
         public int idCliente { get; set; }
@@ -25,10 +25,13 @@ namespace Entidad
         public string cedula { get; set; }
         public string Direccion { get; set; }
         public string Email { get; set; }
+        public string  detalle { get; set; }
 
-     
-        public virtual ICollection<Screens> Screen { get; set; }
-        public virtual ICollection<ventanaAluminio> ventanaAluminio { get; set; }
+        public virtual List<Entidad.ventanaAluminio> VentanaAluminio { get; set; }
+
+
+      //  public virtual ICollection<Screens> Screen { get; set; }
+      //  public virtual ICollection<ventanaAluminio> ventanaAluminio { get; set; }
   
     }
 }

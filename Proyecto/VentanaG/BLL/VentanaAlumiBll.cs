@@ -36,7 +36,7 @@ namespace BLL
             this.permisoValumi = false;
 
         }
-        public VentanaAlumiBll(float Aancho, float Aaltura, string Acolor, string AtipoMat,int AidCliente,DateTime fech)
+        public VentanaAlumiBll(float Aancho, float Aaltura, string Acolor, string AtipoMat,int AidCliente,DateTime fech, string aDetail)
         {
            
           this.precios = precio(Aancho,Aaltura);
@@ -48,15 +48,17 @@ namespace BLL
             {
                 ventanaAluminio ven = new ventanaAluminio()
                 {
+
                     idCliente = AidCliente,
                     tipoMaterial = AtipoMat,
                     color = Acolor,
                     ancho = Aancho,
-                    altura = Aaltura,                    
-                    fecha =fech,
+                    altura = Aaltura,
+                    fecha = fech,
                     precio = precios,
-                 //   Total = suma
-                    
+                    Detail = aDetail,
+                    //   Total = suma
+
 
                 };
                 db.ventanaAluminio.Add(ven);
@@ -337,7 +339,8 @@ namespace BLL
 
             var db = new VentanaGzDb();
 
-            lista = db.ventanaAluminio.Where(p => p.idCliente == id).ToList();
+            //lista = db.ventanaAluminio.Where(p => p.idCliente == id).ToList();
+            lista = db.ventanaAluminio.ToList();
 
             return lista;
 
